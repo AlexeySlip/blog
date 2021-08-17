@@ -66,6 +66,14 @@ margin-bottom: 3px;
 
 /* tabel */
 @media (min-width:768px){
+main h2{
+margin-top: 45px;
+margin-bottom: 30px;
+padding-left: 15px;
+}
+.section-1 p {
+    padding-bottom: 30px;
+}
 
 }
 /* laptop */
