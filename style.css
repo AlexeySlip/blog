@@ -96,12 +96,6 @@ padding-right: 15px;
     .form-search > input[type="search"]{
         padding-inline-start: 10px;
     }
-    }
-    /* desktop */
-    @media (min-width:1200px){
-    .container{
-    max-width: 1140px;
-    }
     .col-md-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
@@ -121,6 +115,12 @@ padding-right: 15px;
     .col-md-12{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    }
+    /* desktop */
+    @media (min-width:1200px){
+    .container{
+    max-width: 1140px;
     }
     }
     /* only mobile */
