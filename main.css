@@ -7,6 +7,9 @@ font-size: 36px;
 .section-1{
 border-bottom: rgb(221, 225, 228) solid 1px;
 }
+.section-3{
+background-color: #3a454d;
+}
 main p{
     color: rgb(141, 143, 146);
     font-size: 16px;
@@ -74,6 +77,9 @@ padding-left: 15px;
 .section-1 p {
     padding-bottom: 30px;
 }
+.team{
+    margin-bottom: 10%;
+    }
 .team-icons {
     top: 163px;
     left: 87px;
@@ -129,16 +135,15 @@ margin-bottom: 40px;
 }
 .team{
 margin-bottom: 7%;
-flex-wrap: wrap;
 }
 .team-icons {
     top: 120px;
     left: 67px;
 }
 }
-.team{
+.team,
+.work{
 display: flex;
-margin-bottom: 10%;
 flex-wrap: wrap;
 }
 .team-name{
@@ -169,11 +174,13 @@ margin: 0px 1px;
 height: 50px;
 width: 50px;
 }
-.team-image{
+.team-image,
+.work-block{
 position: relative;
 margin-bottom: 30px;
 }
-.team-image img{
+.team-image img,
+.work-image img{
     width: 100%;
 }
 .team-image:hover .team-icons{
@@ -189,10 +196,27 @@ display: flex;
    background-color:  rgba(255, 255, 255, 0.301);
 }
 .team-image :hover .overlay{
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(255, 255, 255, 0.301);
+}
+.work-block:hover > .work-name{
+display: block;
+}
+.work-name{
+background-color: #292f36;
+padding: 20px;
+position: absolute;
+width: 100%;
+bottom: 2px;
+display: none;
+}
+.work-name p{
+font-size: 18px;
+font-weight: bold;
+color: white;
+text-transform: uppercase;
 }
