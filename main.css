@@ -45,7 +45,7 @@ background: url(файлы/icon-be.png)no-repeat 50% 50%;
 .icon-in{
     background: url(файлы/icon-in.png)no-repeat 50% 50%;
     }
-h3{
+.section-1 h3{
 text-transform:uppercase;
 margin-bottom: 15px;
 }
@@ -124,8 +124,8 @@ left: 50px;
 @media (max-width:767px){
 main h2{
 text-align: center;
-margin-top: 25px;
-margin-bottom: 15px;
+margin-top: 45px;
+margin-bottom: 35px;
 }
 .section-1 p{
 padding-bottom: 20px;
@@ -142,7 +142,8 @@ margin-bottom: 7%;
 }
 }
 .team,
-.work{
+.work,
+.what-we-do{
 display: flex;
 flex-wrap: wrap;
 }
@@ -203,20 +204,64 @@ display: flex;
     right: 0;
     background-color: rgba(255, 255, 255, 0.301);
 }
-.work-block:hover > .work-name{
+.work-block:hover > .work-name,.work-block:hover >.work-icon{
 display: block;
 }
 .work-name{
+bottom: 2px;
+display: none;
 background-color: #292f36;
 padding: 20px;
 position: absolute;
 width: 100%;
-bottom: 2px;
-display: none;
 }
 .work-name p{
 font-size: 18px;
 font-weight: bold;
 color: white;
 text-transform: uppercase;
+}
+.section-3 h2,.section-5 h2{
+color: white;
+}
+.work-icon{
+    display: none;
+    width: 15px;
+    height: 15px;
+    background: url(файлы/icon-plus.png) 50% 50% no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+.btn-show-me-more{
+display: flex;
+justify-content: center;
+margin-bottom: 60px;
+    margin-top: 20px;
+}
+.btn-show-me-more button{
+    background-color:transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px 30px;
+}
+.btn-show-me-more button:hover{
+    background-color:#23b7a4;
+    border-color: transparent;
+}
+.section-4 p{
+text-align: center;
+margin-bottom: 80px;
+}
+.section-4 h3{
+text-transform: uppercase;
+text-align: center;
+margin:25px 0;
+}
+.what-we-do-icon{
+    display: flex;
+    justify-content: center;
 }
