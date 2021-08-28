@@ -7,7 +7,7 @@ font-size: 36px;
 .section-1{
 border-bottom: rgb(221, 225, 228) solid 1px;
 }
-.section-3{
+.section-3,.section-5{
 background-color: #3a454d;
 }
 main p{
@@ -141,9 +141,7 @@ margin-bottom: 7%;
     left: 67px;
 }
 }
-.team,
-.work,
-.what-we-do{
+.team,.work,.what-we-do,.features{
 display: flex;
 flex-wrap: wrap;
 }
@@ -176,12 +174,14 @@ height: 50px;
 width: 50px;
 }
 .team-image,
-.work-block{
+.work-block,
+.features-block{
 position: relative;
 margin-bottom: 30px;
 }
 .team-image img,
-.work-image img{
+.work-image img,
+.features-image img{
     width: 100%;
 }
 .team-image:hover .team-icons{
@@ -254,7 +254,7 @@ margin-bottom: 60px;
 }
 .section-4 p{
 text-align: center;
-margin-bottom: 80px;
+margin-bottom: 50px;
 }
 .section-4 h3{
 text-transform: uppercase;
@@ -264,4 +264,17 @@ margin:25px 0;
 .what-we-do-icon{
     display: flex;
     justify-content: center;
+}
+.what-we-do{
+    margin-bottom: 100px;
+}
+.features-block h3{
+font-size: 18px;
+color: white;
+text-transform: uppercase;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+.features-block p{
+color: white;
 }
