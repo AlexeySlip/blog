@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap');
 main h2{
 font-family: 'Quattrocento Sans', sans-serif; 
 text-transform:uppercase;
@@ -11,13 +10,14 @@ border-bottom: rgb(221, 225, 228) solid 1px;
 background-color: #3a454d;
 }
 main p{
+    font-family: 'Open Sans', sans-serif;
     color: rgb(141, 143, 146);
     font-size: 16px;
     line-height: normal;
 }
-/* .bold{
-    font-weight: 500!important;
-} */
+.bold{
+    font-weight:bold;
+}
 .section-1-icon{
 display: flex;
 }
@@ -46,6 +46,8 @@ background: url(файлы/icon-be.png)no-repeat 50% 50%;
     background: url(файлы/icon-in.png)no-repeat 50% 50%;
     }
 .section-1 h3{
+font-family: 'Quattrocento Sans', sans-serif;
+font-size: 18px;
 text-transform:uppercase;
 margin-bottom: 15px;
 }
@@ -59,6 +61,9 @@ margin-right: 15px;
 margin-bottom: 3px;
 }
 .section-1-namber{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    color: white;
     width: 50px;
     height: 50px;
     background-color: #23b7a4;
@@ -83,6 +88,19 @@ padding-left: 15px;
 .team-icons {
     top: 163px;
     left: 87px;
+}
+.features{
+    margin-bottom: 60px;
+}
+.what-we-do{
+    margin-bottom: 100px;
+}
+.footer-blocks{
+padding-top: 40px;
+}
+.footer-blocks p{
+height: 25px;
+    line-height: 25px;
 }
 }
 /* laptop */
@@ -140,8 +158,19 @@ margin-bottom: 7%;
     top: 120px;
     left: 67px;
 }
+.what-we-do,.features{
+    margin-bottom: 20px;
 }
-.team,.work,.what-we-do,.features{
+.footer-blocks{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 30px;
+}
+.footer-blocks p{
+    padding-top: 10px;
+}
+}
+.team,.work,.what-we-do,.features,.footer-blocks{
 display: flex;
 flex-wrap: wrap;
 }
@@ -156,6 +185,7 @@ flex-direction: column;
 justify-content: center;
 }
 .team-name p:first-child{
+font-family: 'Quattrocento Sans', sans-serif;
 text-transform:uppercase;
 color: black;
 }
@@ -211,15 +241,15 @@ display: block;
 bottom: 2px;
 display: none;
 background-color: #292f36;
-padding: 20px;
 position: absolute;
 width: 100%;
 }
 .work-name p{
+font-family: 'Quattrocento Sans', sans-serif;
 font-size: 18px;
-font-weight: bold;
 color: white;
 text-transform: uppercase;
+padding: 20px;
 }
 .section-3 h2,.section-5 h2{
 color: white;
@@ -240,6 +270,7 @@ margin-bottom: 60px;
     margin-top: 20px;
 }
 .btn-show-me-more button{
+    font-family: 'Quattrocento Sans', sans-serif;
     background-color:transparent;
     color: white;
     border: 2px solid white;
@@ -257,6 +288,8 @@ text-align: center;
 margin-bottom: 50px;
 }
 .section-4 h3{
+font-family: 'Quattrocento Sans', sans-serif;
+font-size: 17px;
 text-transform: uppercase;
 text-align: center;
 margin:25px 0;
@@ -265,10 +298,9 @@ margin:25px 0;
     display: flex;
     justify-content: center;
 }
-.what-we-do{
-    margin-bottom: 100px;
-}
+
 .features-block h3{
+font-family: 'Quattrocento Sans', sans-serif;
 font-size: 18px;
 color: white;
 text-transform: uppercase;
@@ -277,4 +309,62 @@ margin-bottom: 30px;
 }
 .features-block p{
 color: white;
+margin-bottom: 60px;
+}
+.section-7 h3{
+font-family: "Quattrocento Sans", sans-serif;
+font-size: 20px;
+text-transform: uppercase;
+margin-top: 60px;
+margin-bottom: 40px;
+}
+.section-7 p {
+    margin-bottom: 40px;
+}
+.btn-send{
+    background-color: #23b7a3;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+.btn-send:hover{
+    background-color:transparent;
+    color: #23b7a3;
+    border-color: #23b7a3;
+}
+.contact{
+    margin-bottom: 50px;
+}
+.footer-background{
+background-color: #3a454d;
+height: 100px;
+}
+.footer-blocks p{
+    color: white;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons [class*="footer-"]{
+    width: 25px;
+    height: 25px;
+}
+.footer-1{
+    background: url(файлы/footer-1.png)no-repeat 50% 50%;
+}
+.footer-2{
+    background: url(файлы/footer-2.png)no-repeat 50% 50%;
+}
+.footer-3{
+    background: url(файлы/footer-3.png)no-repeat 50% 50%;
+}
+.footer-4{
+    background: url(файлы/footer-4.png)no-repeat 50% 50%;
+}
+.footer-5{
+    background: url(файлы/footer-5.png)no-repeat 50% 50%;
 }
