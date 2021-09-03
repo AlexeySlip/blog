@@ -14,18 +14,11 @@ function openModal(){
     modal.classList.add("show");
     }
 
-    function closeModal(){
-        modal.classList.remove("show");
-        modal.classList.add("hide");
-        }
-    modal.addEventListener("click", function(e){
-        if (e.target === modal) {
-        closeModal()
-        }})
-
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-              el: ".swiper-pagination",
-              dynamicBullets: true,
-            },
-          });
+function closeModal(){
+    modal.classList.remove("show");
+    modal.classList.add("hide");
+    }
+modal.addEventListener("click", function(e){
+    if (e.target === modal) {
+    closeModal()
+    }})
