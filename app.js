@@ -22,3 +22,10 @@ function openModal(){
         if (e.target === modal) {
         closeModal()
         }})
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+              dynamicBullets: true,
+            },
+          });

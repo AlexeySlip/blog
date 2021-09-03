@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="main.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="page-header">
@@ -42,20 +46,37 @@
     </header>
     <main>
         <div class="slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <H1>WELCOME TO OUR MARKETPLACE</H1>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="container">
+                                      <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <H1>WELCOME TO OUR MARKETPLACE</H1>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-7">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dicta autem labore sequi harum placeat voluptate corrupti recusandae adipisci, nemo nostrum esse? Nam necessitatibus odio magni iure consequuntur cum laudantium!</p>
+                                        </div>
+                                        <div class="col-xs-12 slider-button">
+                                            <a href="">VIEW MORE</a>
+                                            <a href="">VIDEO TOUR</a>
+                                        </div>
+                                      </div>
+
+                              </div>
+                            </div>
+                              <div class="swiper-slide">Slide 2</div>
+                              <div class="swiper-slide">Slide 3</div>
+                              <div class="swiper-slide">Slide 4</div>
+                              <div class="swiper-slide">Slide 5</div>
+                              <div class="swiper-slide">Slide 6</div>
+                              <div class="swiper-slide">Slide 7</div>
+                              <div class="swiper-slide">Slide 8</div>
+                              <div class="swiper-slide">Slide 9</div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                     </div>
-                    <div class="col-xs-12 col-sm-7">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dicta autem labore sequi harum placeat voluptate corrupti recusandae adipisci, nemo nostrum esse? Nam necessitatibus odio magni iure consequuntur cum laudantium!</p>
-                    </div>
-                    <div class="col-xs-12 slider-button">
-                        <a href="">VIEW MORE</a>
-                        <a href="">VIDEO TOUR</a>
-                    </div>
-                </div>
-            </div>
+                
         </div>
         <div class="sections">
             <section class="section-1">
@@ -411,5 +432,14 @@
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
 </body>
 </html>
