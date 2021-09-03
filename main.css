@@ -228,6 +228,16 @@ margin: 0px 1px;
 height: 50px;
 width: 50px;
 }
+.icon-twiter:hover{
+background-color: #00acee;
+}
+.icon-facebook:hover{
+background-color: #3b5998;
+}
+.icon-in:hover{
+background-color: #0e76a8;
+}
+
 .team-image,
 .work-block,
 .features-block{
