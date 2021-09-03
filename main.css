@@ -102,6 +102,13 @@ padding-top: 40px;
 height: 25px;
     line-height: 25px;
 }
+.modal-block{
+    width: 550px;
+    height: 400px;
+}
+.btn-send-message button {
+    margin-top: 35px;
+}
 }
 /* laptop */
 @media (min-width:992px){
@@ -169,6 +176,24 @@ margin-bottom: 7%;
 .footer-blocks p{
     padding-top: 10px;
 }
+.btn-send-position{
+    display: flex;
+    justify-content: center;
+}
+.section-7 h3,.section-7 p{
+    text-align: center;
+}
+.modal-block{
+    width: 300px;
+    height: 420px;
+}
+.btn-send-message button {
+    margin-top: 15px;
+}
+.btn-send-message{
+    display: flex;
+    justify-content: center;
+}
 }
 .team,.work,.what-we-do,.features,.footer-blocks{
 display: flex;
@@ -179,7 +204,7 @@ height: 60px;
 background-color: rgb(225, 230, 234);
 padding-left: 15px;
 position: relative;
-bottom: 2px;
+bottom: 3px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -223,17 +248,7 @@ display: flex;
 .team-image:hover .team-name>p{
     color: white;
 }
-.team-image :hover  img{
-   background-color:  rgba(255, 255, 255, 0.301);
-}
-.team-image :hover .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.301);
-}
+
 .work-block:hover > .work-name,.work-block:hover >.work-icon{
 display: block;
 }
@@ -367,4 +382,69 @@ height: 100px;
 }
 .footer-5{
     background: url(файлы/footer-5.png)no-repeat 50% 50%;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.modal-block{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid grey;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+.btn-close{
+    text-align: right;
+    cursor: pointer;
+}
+.flex-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal-block p{
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #8d8f92;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.flex-input input{
+width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: #eaeef1;
+    border: none;
+}
+.modal-block textarea{
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    background-color: #eaeef1;
+    border: none;
+}
+.modal-block button{
+background-color: #23b7a3;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
 }
