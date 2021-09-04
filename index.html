@@ -46,6 +46,9 @@
     </header>
     <main>
         <div class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
@@ -73,8 +76,13 @@
                               <div class="swiper-slide">Slide 8</div>
                               <div class="swiper-slide">Slide 9</div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
+                        </div>
                     </div>
+                </div>
+            </div>
         </div>
         <div class="sections">
             <section class="section-1">
@@ -432,12 +440,20 @@
     <script src="app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-      });
-    </script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          hashNavigation: {
+            watchState: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>

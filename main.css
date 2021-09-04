@@ -109,6 +109,9 @@ height: 25px;
 .btn-send-message button {
     margin-top: 35px;
 }
+.swiper-slide:first-child{
+    padding: 0 30px;
+}
 }
 /* laptop */
 @media (min-width:992px){
@@ -192,6 +195,13 @@ margin-bottom: 7%;
 }
 .btn-send-message{
     display: flex;
+    justify-content: center;
+}
+.swiper-button-next,.swiper-button-prev{
+    display: none !important;
+}
+.slider-button{
+    flex-wrap: wrap;
     justify-content: center;
 }
 }
@@ -460,7 +470,7 @@ background-color: #23b7a3;
 }
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 660px;
 }
 
 .swiper-slide {
@@ -487,4 +497,7 @@ background-color: #23b7a3;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-button-next,.swiper-button-prev,.swiper-pagination:root{
+    color: #ccd0d7!important;
 }

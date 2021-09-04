@@ -27,4 +27,5 @@ background-color: #23b7a4;
 }
 .slider-button{
 margin-top: 40px;
+display: flex;
 }
