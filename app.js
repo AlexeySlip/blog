@@ -22,3 +22,34 @@ modal.addEventListener("click", function(e){
     if (e.target === modal) {
     closeModal()
     }})
+
+    // slider
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    // mobile menu
+let mobileMenu = document.querySelector(".nav-mobile-menu");
+let mainMenu = document.querySelector(".navigation")
+
+mobileMenu.addEventListener("click",function(){
+  mobileMenu.classList.toggle("active-menu");
+  if (mobileMenu.classList.contains("active-menu")) {
+    mainMenu.classList.add("active-menu")
+  } else{
+    mainMenu.classList.remove("active-menu")
+  }
+}
+)

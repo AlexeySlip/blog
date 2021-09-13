@@ -3,6 +3,7 @@ background: url(файлы/main-backgroung.png)no-repeat 100% 100%;
 height: 660px;
 display: flex;
 align-items: center;
+padding: 85px 0;
 }
 .slider-button>a{
 text-decoration: none;

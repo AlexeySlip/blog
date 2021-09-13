@@ -22,8 +22,8 @@
                     <a href=""><img src="файлы/Logo.jpg"></a>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-7">
-                    <nav>  
-                        <ul class="menu">
+                    <nav class="navigation">  
+                        <ul class="menu ">
                             <li><a href="">HOME</a></li>
                             <li><a href="">ABOUT</a></li>
                             <li><a href="">WORK</a></li>
@@ -33,6 +33,9 @@
                             <li><a href="">CONTACT</a></li>
                         </ul>
                     </nav>
+                    <div class="nav-mobile-menu">
+                        <span></span><span></span><span></span>
+                    </div>
                 </div>
                 <div class="col-xs-hidden col-sm-2 col-md-2 ">
                     <form class="form-search">
@@ -437,25 +440,7 @@
             </form>
         </div>
     </div>
-    <script src="app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+    <script src="app.js"></script>
 </body>
 </html>
